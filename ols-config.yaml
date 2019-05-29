@@ -1,0 +1,56 @@
+"@context":
+
+ontologies:
+
+### DCAT ###
+
+  - id: dcat
+    preferredPrefix: dcat
+    title: Data Catalog Vocabulary
+    description: >
+      The Experimental Factor Ontology (EFO) provides a systematic description of many experimental
+      variables available in EBI databases, and for external projects such as the NHGRI GWAS catalogue.
+      It combines parts of several biological ontologies, such as anatomy, disease and chemical compounds.
+      The scope of EFO is to support the annotation, analysis and visualization of data handled by many
+      groups at the EBI and as the core ontology for the Centre for Therapeutic Validation (CTTV)
+
+    # What's the difference between uri, base_uri, homepage?
+    uri: https://w3c.github.io/dxwg/dcat/
+    homepage: https://w3c.github.io/dxwg/dcat/
+    base_uri:
+      - https://w3c.github.io/dxwg/dcat/
+
+    ontology_purl : https://raw.githubusercontent.com/w3c/dxwg/94087c5994951b725b6d6fbd32bdd7d2cdfc2853/dcat/rdf/dcat.ttl
+
+    license:
+      label: W3C Document License,
+      url: https://www.w3.org/Consortium/Legal/2015/doc-license
+    mailing_list: efo-users@lists.sourceforge.net
+
+    reasoner: OWL2
+    oboSlims: false
+
+### FOAF ###
+
+  - id: foaf
+    preferredPrefix: FOAF
+    title: Experimental Factor Ontology
+    description: >
+      This ontology is used to describe people and social relationship on the Web.
+      It is mostly focused on people's existence in the virtual world, with many properties
+      related to online activity or identity.
+    uri: http://www.foaf-project.org/
+    homepage: http://www.foaf-project.org/
+    base_uri:
+      - http://xmlns.com/foaf/spec/
+
+    ontology_purl: http://xmlns.com/foaf/spec/20140114.rdf
+
+    license:
+      label: CC-BY,
+      logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+      url: http://creativecommons.org/licenses/by/3.0/
+    mailing_list: http://lists.foaf-project.org/mailman/listinfo/foaf-dev
+
+    reasoner: OWL2
+    oboSlims: false
